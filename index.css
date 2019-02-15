@@ -3,29 +3,46 @@
     padding: 0;
 /*    border: solid; color: white;*/
 }
+
 body {
     color: #FFFFFF;
     background-color: #0A0D48;
     font-family: sans-serif;
 }
+
+.container{
+    width: 768px;
+    height: 1024px;
+    margin: 0 auto;
+}
 .marquee h4 {
-    
 }
 .marquee {
-/*    font-weight: normal;*/
-    display: flex;
-    justify-content: center;
-    padding-top: 40px;
-    font-size: 80px;
+
+   text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    border-bottom: 2px solid #FFB31D;
+    border-top: 2px solid #FFB31D;
+    margin-top: 40px;
+    
 }
 
 .letter-button {
+/*
     display: flex;
     justify-content: center;
     align-items: baseline;
-    margin: 0 auto;
+*/
+    margin: 200px auto 0px auto;
+    width: 100%;
+    height:500px;
+    
+/*
     padding: 400px; 
     padding-bottom: 600px;
+*/
 /*    position: relative;*/
 }
 .z{
@@ -33,6 +50,11 @@ body {
 }
 .z h1 {
     font-weight: normal;
+    color: #FFB31D;
+    font-family: brush-script-std, sans-serif;
+    font-size: 800px;
+    line-height: 0;
+    align-content: center;
     
 }
 
@@ -50,7 +72,7 @@ body {
     z-index: 80;
 }
 .
-.button {
+#button {
     align-items: baseline;
     height:50px;
     width: 50px;
@@ -84,15 +106,15 @@ a:active {
 .photo-info{
     display: flex;
     margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-.pic {
-    border: 1px solid white;
+.pic img{
+    border: 2px solid white;
     border-radius: 50%;
-/*  
-    border: 2px solid #5D6063;
-  border-radius: 5px;
-*/
+    height: 150px;
 }
+
 .stack-info{
 }
 .info{  
