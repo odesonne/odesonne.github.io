@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-/*    border: solid; color: white;*/
 }
 
 body {
@@ -15,76 +14,63 @@ body {
     height: 1024px;
     margin: 0 auto;
 }
-.marquee h4 {
-}
-.marquee {
 
+.marquee {
    text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 40px;
+    font-size: 60px;
     border-bottom: 2px solid #FFB31D;
     border-top: 2px solid #FFB31D;
     margin-top: 40px;
-    
 }
 
 .letter-button {
-/*
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-*/
-    margin: 200px auto 0px auto;
+    margin: 0px auto 0px auto;
+    padding-top: 200px;
     width: 100%;
     height:500px;
-    
-/*
-    padding: 400px; 
-    padding-bottom: 600px;
-*/
-/*    position: relative;*/
+    position: relative;
 }
-.z{
-    z-index: 10;
-}
-.z h1 {
+
+
+.letter-button h1 {
     font-weight: normal;
     color: #FFB31D;
     font-family: brush-script-std, sans-serif;
     font-size: 800px;
     line-height: 0;
-    align-content: center;
+    z-index: 150;
+    text-align: center;
     
 }
 
-.cycle-slideshow-analysis {
-    z-index: 2;
-}
-.empty-image{
+.analysis {
     position: absolute;
-    z-index: 50;
+    top: -300px;
+    left: -220px;
 }
-.analysis-image{
-    position: absolute;
-    top: 350px;
-    left: 450px;
-    z-index: 80;
-}
-.
+
+
 #button {
-    align-items: baseline;
-    height:50px;
-    width: 50px;
+    height: 65px;
+    width: 65px;
     border-radius: 100%;
-    z-index: 1;
-    
-/*    position: absolute;*/
-/*
-    top: pixel value
-    left:
-    right:
-*/
+    border: 3px solid white;
+    background: #FFB31D;
+    z-index: 180;
+    position: absolute;
+    right: 195px;
+    top: 390px; 
+}
+#button:active{
+    background: #FFB31D;
+    border: 3px solid white;
+}
+
+#button:focus{
+    background: white;
+    border: 3px solid #FFB31D;
 }
 
 .font-name { 
@@ -94,17 +80,21 @@ body {
 .font-info{  
     line-height: 50px;
     font-size: 20px;
+    position: relative;
+    z-index: 3000000;
 }
 a{
     text-decoration: none;
     color: #FFB31D;
 }
-a:active {
+a:visited{
     text-decoration: none;
-    color: aliceblue;
+    color: darkgray;
 }
+
 .photo-info{
     display: flex;
+    align-items: center;
     margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -113,11 +103,5 @@ a:active {
     border: 2px solid white;
     border-radius: 50%;
     height: 150px;
-}
-
-.stack-info{
-}
-.info{  
-}
-.sources{
+    margin-right: 30px;
 }
