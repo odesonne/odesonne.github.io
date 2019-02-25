@@ -16,13 +16,21 @@ body {
 }
 
 .marquee {
-   text-align: center;
+    text-align: center;
     padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 60px;
+    padding-bottom: 25px;
     border-bottom: 2px solid #FFB31D;
     border-top: 2px solid #FFB31D;
     margin-top: 40px;
+    font-family: brush-script-std, sans-serif;
+    font-size: 60px;
+}
+
+.overflow{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 50px;
+    clear:both;
 }
 
 .letter-button {
@@ -47,8 +55,8 @@ body {
 
 .analysis {
     position: absolute;
-    top: -300px;
-    left: -220px;
+    top: 100px;
+    left: 130px;
 }
 
 
@@ -63,10 +71,12 @@ body {
     right: 195px;
     top: 390px; 
 }
+/*
 #button:active{
     background: #FFB31D;
     border: 3px solid white;
 }
+*/
 
 #button:focus{
     background: white;
@@ -78,7 +88,7 @@ body {
     line-height: 100px;
 }
 .font-info{  
-    line-height: 50px;
+    line-height: 35px;
     font-size: 20px;
     position: relative;
     z-index: 3000000;
@@ -98,6 +108,9 @@ a:visited{
     margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+.sources p{
+    font-size: 10px;
 }
 .pic img{
     border: 2px solid white;
