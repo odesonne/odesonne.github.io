@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: bc-alphapipe, sans-serif;
+}
+body {
+    background-image:url(images/stars_clusters.jpeg);
+}
+
+.container{
+    width: 1024px;
+    margin: 50px auto;
+    background-color: #00000099;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 90px;
+}
+.flex-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title_bubble{
+    margin-bottom: 50px; 
+}
+
+.menu-button a{
+    height: 60px;
+    width: 150px;
+    color: #f0ff49;
+    text-decoration: none;
+    font-family: ;
+    background-color: #00000000;
+    border-radius: 20px;
+    border: solid 2px #f0ff49;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    line-height: 58px
+}
+
+.flex_content{
+    display: flex;
+    justify-content: space-between;
+}
+.telescope{
+    padding-top: 100px;
+    padding-left: 50px;
+}
+.telescope img{
+    position: relative;
+    border-radius: 50px;
+    z-index: 100;
+}
+/********* Styles specifically for*/
+.telescope h2{
+    position: relative;
+    z-index: 200;
+    top: -200px;
+    left: 200px;
+    font-weight: normal;
+}
+.content1{
+    padding-left: 200px;
+}
+.learn-choices {
+    width: 180px;
+    height: 550px;
+    text-align: center;
+    align-items: center;
+}
+
+.learn-text{
+    width: 200px;
+    height: 550px;
+    font-size: 15px;
+    color: #eaeaea;
+}
+
+.learn-text h3, 
+.learn-text h4{
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.learn-text h3{
+    font-size: 24px;
+}
+.learn-text h4{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.learn-square-constellations a{
+    height: 150px;
+    width: 150px;
+    color: #eaeaea;
+    text-decoration: none;
+    border-radius: 20%;
+    border: solid 2px #eaeaea;
+    display: inline-block;
+    margin: 15px;
+   
+}
+
+.constellations-button {
+        background-image:url(images/constellations-button.jpg); 
+     background-size: cover;
+    background-position: center center;
+}
+
+.learn-square-planets a {
+    height: 150px;
+    width: 150px;
+    color: #eaeaea;
+    text-decoration: none;
+    border-radius: 20%;
+    border: solid 2px #eaeaea;
+    display: inline-block;
+    margin: 15px;
+    background-image:url(images/planets-button.jpg); height="150px";
+    background-size: cover;
+    background-position: center center;
+}
+
+.learn-square-moon a {
+    height: 150px;
+    width: 150px;
+    color: #eaeaea;
+    text-decoration: none;
+    border-radius: 20%;
+    border: solid 2px #eaeaea;
+    display: inline-block;
+    margin: 15px;
+    background-image:url(images/moon.jpg); height="150px";
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.big-button-rec-orion a  {
+    height: 550px;
+    width: 300px;
+    color: #eaeaea;
+    text-decoration: none;
+    text-align: center;
+    background-color: #eaeaea;
+    border-radius: 40px;
+    border: solid 2px #eaeaea;
+    display: inline-block;
+    margin: 15px;
+    background-image:url(images/orion-button.jpg); height="550px";
+    background-size: cover;
+    background-position: center center;
+}
+
+.big-button-rec-gemini a  {
+    height: 550px;
+    width: 300px;
+    color: #eaeaea;
+    text-decoration: none;
+    text-align: center;
+    background-color: #eaeaea;
+    border-radius: 40px;
+    border: solid 2px #eaeaea;
+    display: inline-block;
+    margin: 15px;
+    background-image:url(images/gemini-button.jpg); height="550px";
+    background-size: cover;
+    background-position: center center;
+}
+
+.circle-slide{
+    height: 550px;
+    width: 550px;
+    color: #f0ff49;
+    background-color: #eaeaea;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 0px;
+}
+.telescope{
+    margin-right: 40px;
+}
+
+.content1{
+    margin-right: 40px; 
+}
+.content2{
+    margin-right: 40px;
+}
+
+
+
+.a{
+    text-decoration: none;
+    color: white;
+}
+.a:visited{
+    text-decoration: none;
+    color: goldenrod;
+}
