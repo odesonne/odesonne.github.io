@@ -1,23 +1,21 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: bc-alphapipe, sans-serif;
 }
 body {
-    width: 1024px;
-    height: 768px;
-    margin: 0 auto;
-    background-color: rgb(163, 2, 120);
+    background-image:url(images/stars_clusters.jpeg);
 }
 
 .container{
-    background-color: black;
+    width: 1024px;
+    margin: 50px auto;
+    background-color: #00000099;
     padding-top: 50px;
     padding-bottom: 100px;
     padding-left: 50px;
     padding-right: 50px;
     border-radius: 90px;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 .flex-nav{
     display: flex;
@@ -25,40 +23,52 @@ body {
     align-items: center;
 }
 .title_bubble{
-    width: 270px;
-    height: 200px;
-    border: solid white 5px;
-    border-radius: 100%;
-    color: white;
-    text-align: center;
-    margin-bottom: 40px;
-    line-height: 200px;
-    background-color: aqua;
+    margin-bottom: 50px; 
 }
 
-.menu a{
-    height: 40px;
-    width: 70px;
-    color: balck;
+.menu-button a{
+    height: 60px;
+    width: 150px;
+    color: #f0ff49;
     text-decoration: none;
-    font-family: monospace;
-    background-color: aqua;
-    border-radius: 10px;
+    font-family: ;
+    background-color: #00000000;
+    border-radius: 20px;
+    border: solid 2px #f0ff49;
     display: inline-block;
     text-align: center;
-    margin: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    line-height: 58px
 }
 
 .flex_content{
     display: flex;
+    justify-content: space-between;
 }
-.learn-choices{
-    width: 200px;
+.telescope{
+    padding-top: 100px;
+    padding-left: 50px;
+}
+.telescope img{
+    position: relative;
+    border-radius: 50px;
+    z-index: 100;
+}
+/********* Styles specifically for*/
+.telescope h2{
+    position: relative;
+    z-index: 200;
+    top: -200px;
+    left: 200px;
+    font-weight: normal;
+}
+.content1{
+    padding-left: 200px;
+}
+.learn-choices {
+    width: 180px;
     height: 550px;
-    border-radius: 40px;
-    background-color: aqua;
-    margin-right: 50px;
-    padding-top: 5px;
     text-align: center;
     align-items: center;
 }
@@ -66,55 +76,107 @@ body {
 .learn-text{
     width: 200px;
     height: 550px;
-    border-radius: 40px;
-    background-color: aqua;
-    margin-right: 50px;
-    padding: 15px;
+    font-size: 15px;
+    color: #eaeaea;
 }
 
-/*
-.learn-square{
-    height: 150px;
-    width: 150px;
-    color: aquamarine;
-    background-color: aliceblue;
-    border-radius: 20%;
-    display: inline-block;
-    margin: 15px;
+.learn-text h3, 
+.learn-text h4{
+    margin-bottom: 20px;
+    font-weight: 400;
 }
-*/
+.learn-text h3{
+    font-size: 24px;
+}
+.learn-text h4{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
 
-.learn-square a {
+.learn-square-constellations a{
     height: 150px;
     width: 150px;
-    color: white;
+    color: #eaeaea;
     text-decoration: none;
-    font-family: monospace;
-    background-color: #000000;
     border-radius: 20%;
+    border: solid 2px #eaeaea;
     display: inline-block;
     margin: 15px;
-    
+   
 }
 
-.big-button-rec a {
+.constellations-button {
+        background-image:url(images/constellations-button.jpg); 
+     background-size: cover;
+    background-position: center center;
+}
+
+.learn-square-planets a {
+    height: 150px;
+    width: 150px;
+    color: #eaeaea;
+    text-decoration: none;
+    border-radius: 20%;
+    border: solid 2px #eaeaea;
+    display: inline-block;
+    margin: 15px;
+    background-image:url(images/planets-button.jpg); height="150px";
+    background-size: cover;
+    background-position: center center;
+}
+
+.learn-square-moon a {
+    height: 150px;
+    width: 150px;
+    color: #eaeaea;
+    text-decoration: none;
+    border-radius: 20%;
+    border: solid 2px #eaeaea;
+    display: inline-block;
+    margin: 15px;
+    background-image:url(images/moon.jpg); height="150px";
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.big-button-rec-orion a  {
     height: 550px;
     width: 300px;
-    color: black;
-    font-family: monospace;
+    color: #eaeaea;
     text-decoration: none;
     text-align: center;
-    background-color: white;
+    background-color: #eaeaea;
     border-radius: 40px;
+    border: solid 2px #eaeaea;
     display: inline-block;
     margin: 15px;
+    background-image:url(images/orion-button.jpg); height="550px";
+    background-size: cover;
+    background-position: center center;
+}
+
+.big-button-rec-gemini a  {
+    height: 550px;
+    width: 300px;
+    color: #eaeaea;
+    text-decoration: none;
+    text-align: center;
+    background-color: #eaeaea;
+    border-radius: 40px;
+    border: solid 2px #eaeaea;
+    display: inline-block;
+    margin: 15px;
+    background-image:url(images/gemini-button.jpg); height="550px";
+    background-size: cover;
+    background-position: center center;
 }
 
 .circle-slide{
     height: 550px;
     width: 550px;
-    color: aquamarine;
-    background-color: aliceblue;
+    color: #f0ff49;
+    background-color: #eaeaea;
     border-radius: 100%;
     display: inline-block;
     margin: 0px;
