@@ -1,3 +1,4 @@
+/*All Pages*/
 *{
     margin: 0;
     padding: 0;
@@ -20,42 +21,38 @@ body {
 .flex-nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 .title_bubble{
     margin-bottom: 50px; 
 }
-
+.flex_content{
+    display: flex;
+    justify-content: space-between;
+}
+/*Nav buttons*/
 .menu-button a{
     height: 60px;
     width: 150px;
     color: #f0ff49;
     text-decoration: none;
-    font-family: ;
-    background-color: #00000000;
     border-radius: 20px;
     border: solid 2px #f0ff49;
     display: inline-block;
     text-align: center;
-    margin-bottom: 15px;
-    margin-right: 15px;
+    margin-bottom: 20px;
     line-height: 58px
 }
-
-.flex_content{
-    display: flex;
-    justify-content: space-between;
-}
+/*Homepage ONLY*/
 .telescope{
     padding-top: 100px;
     padding-left: 50px;
+    margin-right: 40px;
 }
 .telescope img{
     position: relative;
     border-radius: 50px;
     z-index: 100;
 }
-/********* Styles specifically for*/
 .telescope h2{
     position: relative;
     z-index: 200;
@@ -63,84 +60,45 @@ body {
     left: 200px;
     font-weight: normal;
 }
-.content1{
-    padding-left: 200px;
-}
+
+/*Sidebar*/
 .learn-choices {
     width: 180px;
     height: 550px;
     text-align: center;
     align-items: center;
 }
-
-.learn-text{
-    width: 200px;
-    height: 550px;
-    font-size: 15px;
-    color: #eaeaea;
-}
-
-.learn-text h3, 
-.learn-text h4{
-    margin-bottom: 20px;
-    font-weight: 400;
-}
-.learn-text h3{
-    font-size: 24px;
-}
-.learn-text h4{
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-.learn-square-constellations a{
+.learn-square a{
     height: 150px;
     width: 150px;
     color: #eaeaea;
     text-decoration: none;
     border-radius: 20%;
     border: solid 2px #eaeaea;
-    display: inline-block;
+    display: block;
     margin: 15px;
-   
 }
-
-.constellations-button {
-        background-image:url(images/constellations-button.jpg); 
-     background-size: cover;
+.constellations-button a {
+    background-image:url(images/constellations-button.jpg); 
+    background-size:cover;
     background-position: center center;
 }
-
-.learn-square-planets a {
-    height: 150px;
-    width: 150px;
-    color: #eaeaea;
-    text-decoration: none;
-    border-radius: 20%;
-    border: solid 2px #eaeaea;
-    display: inline-block;
-    margin: 15px;
+.planets-button a{
     background-image:url(images/planets-button.jpg); height="150px";
     background-size: cover;
     background-position: center center;
 }
-
-.learn-square-moon a {
-    height: 150px;
-    width: 150px;
-    color: #eaeaea;
-    text-decoration: none;
-    border-radius: 20%;
-    border: solid 2px #eaeaea;
-    display: inline-block;
-    margin: 15px;
+.moon-button a{
     background-image:url(images/moon.jpg); height="150px";
     background-size: cover;
     background-position: center center;
 }
-
-
-.big-button-rec-orion a  {
+/*Choice Pages*/
+.content1{
+    margin-right: 40px; 
+    padding-left: 200px;
+}
+.big-button-rec a  {
     height: 550px;
     width: 300px;
     color: #eaeaea;
@@ -149,56 +107,73 @@ body {
     background-color: #eaeaea;
     border-radius: 40px;
     border: solid 2px #eaeaea;
-    display: inline-block;
+    display: block;
     margin: 15px;
+}
+.orion-button a{
     background-image:url(images/orion-button.jpg); height="550px";
     background-size: cover;
     background-position: center center;
 }
-
-.big-button-rec-gemini a  {
-    height: 550px;
-    width: 300px;
-    color: #eaeaea;
-    text-decoration: none;
-    text-align: center;
-    background-color: #eaeaea;
-    border-radius: 40px;
-    border: solid 2px #eaeaea;
-    display: inline-block;
-    margin: 15px;
+.gemini-button a{
     background-image:url(images/gemini-button.jpg); height="550px";
     background-size: cover;
     background-position: center center;
 }
 
-.circle-slide{
-    height: 550px;
-    width: 550px;
+/*Content Pages*/
+.name-info{
     color: #f0ff49;
-    background-color: #eaeaea;
+    margin-bottom: 75px;
+}
+.name-info h2{
+    font-size: 70px;
+    font-weight: normal;
+    line-height: 80px;
+}
+.name-info h3{
+    font-size: 25px;
+    font-weight: normal;
+}
+.learn-text{
+    width: 250px;
+    height: 550px;
+    font-size: 15px;
+    color: #eaeaea;
+}
+.learn-text h4{
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.image-modals button{
+    width: 25px;
+    height: 25px;
     border-radius: 100%;
-    display: inline-block;
-    margin: 0px;
-}
-.telescope{
-    margin-right: 40px;
-}
 
-.content1{
-    margin-right: 40px; 
 }
-.content2{
-    margin-right: 40px;
+.Betelguise{
+    position: relative;
+    z-index: 300;
+    top: -604px;
+    left: -383px;
 }
-
-
-
-.a{
-    text-decoration: none;
-    color: white;
+.Rigel{
+    position: relative;
+    z-index: 300;
+    top: -133px;
+    left: -290px;
 }
-.a:visited{
-    text-decoration: none;
-    color: goldenrod;
+.Nebula{
+    position: relative;
+    z-index: 300;
+    top: -356px;
+    left: -397px;
+    width: 25px;
+}
+.image-modals img{
+    border-radius: 50px;
+    position: relative;
+    z-index: 100;
 }
