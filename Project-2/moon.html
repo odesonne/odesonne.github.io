@@ -5,39 +5,79 @@
     <title>Project 2</title>
     <link rel="stylesheet"
           href="assets/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/egc3gbz.css">
     </head>
 
 <body>
     
-<!--    <nav><a href="">Constellations</a> <a href="">Planets</a> <a href="">Moon</a></nav>-->
     <div class="container">
-        <div class="title_bubble">
-        <h1>The Moon</h1>
-    
+        <div class="flex-nav"> 
+           <div class="title_bubble">
+        <img src="assets/galaxy_quest_png24.png">
+        
     </div>
+            <div class="button-group">
+            <div class="menu-button">
+            <a href="index.html">
+            Home</a>
+                </div>
+            <div class="menu-button">
+            <a href="constellations.html">
+            Back</a>
+                </div>
+            </div>
+        </div>
+        
     <div class="flex_content">
 
-    <div class="learn-text">
-        Info on the Moon
-        <br>
-        <br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        
-        
-    </div>
-    
     <div class="content2">
-        <div class="circle-slide">
-        Moon
-        </div>
-    
+            <div class="name-info">
+            <h2>The Moon</h2> <h3>Earth's sole satillite</h3>
+                </div>
+        <div class="learn-text">
+        <h4>Northern & Southern Hemispheres
+         </h4>
+        
+        <p>The Moon is a bright and beautiful part of Earth's night sky. Tidally locked to the Earth, we only ever see one side. When the moon was young, it rotated on an axis, much like the Earth. Eventually it became "tidally locked" to the Earth, meaning Earth's gravitational pull overcame the motion of rotation. Contrary to popular belief, the side we do not see is not the "dark side of the moon." Whichever half of the moon is facing the sun will always be lit, and during a New Moon (as seen from Earth) the far side is fully lit, as a Full Moon would be for us on Earth. </p>
     </div>
-    
-    
-    </div>
-    
-        </body>
 
+    </div>
+    <div class="image-modals">
+        <img src="assets/images/moon.jpg" height="600px">
+        <button class="Tycho" id="Tycho-button"></button>
+        <button class="mare" id="mare-button"></button>
+  
+    </div>
+    
+    <div id="grey-background">
+        </div>      
+    <div class="modal" id="mare-modal">
+        <h1>
+            Lunar Oceans
+            </h1>
+        <p>
+            Known as <em>mare</em>, the Latin word for "seas," the dark swaths across the face of the moon were once liquid. In the moon's early eons it had a liquid core of magma, much like the Earth. When large galatic fragments or meteors collided with the moon, the surface cracked releasing oceans of magma. As the moon became tidally locked to the Earth, these seas of lava were pulled by Earth's gravity to the Earth-facing side of the moon before solidifying into the dark seas we see today. As a result, there are no <em>mare</em> on the far side of the moon.
+            </p>
+        
+        </div>
+        
+    <div class="modal" id="Tycho-modal">
+        <h1>
+            Tycho Crater
+            </h1>
+        <p>
+            Named after famous 16th century Danish astronomer Tycho Brahe, Tycho crater is 85km in diameter, located deep in the southern hemisphere of the moon. As a well-preserved crater, Tycho is often studied to uncover the mechanics of impact formation. Its impact site and resulting blast rays are visible through a telescope as prominent light spots on the southeast side of the moon.
+            </p>
+        
+        </div>
+        
+        
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/popup.js"></script>
+ 
+        </body>
 
 
     </html>

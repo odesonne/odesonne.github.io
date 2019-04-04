@@ -48,7 +48,7 @@ body {
     padding-left: 50px;
     margin-right: 40px;
 }
-.telescope img{
+#colorful{
     position: relative;
     border-radius: 50px;
     z-index: 100;
@@ -56,9 +56,28 @@ body {
 .telescope h2{
     position: relative;
     z-index: 200;
-    top: -200px;
+    top: -220px;
     left: 200px;
     font-weight: normal;
+}
+#arrow{
+    position: relative;
+    z-index: 199;
+    top: -230px;
+    left: 150px;
+    animation: arrow-pulse 3.5s infinite;
+}
+
+@keyframes arrow-pulse{
+  0% {
+    opacity: 100;
+  }
+  50% {
+      opacity: 0;
+  }
+    100%{
+        opacity: 100;
+    }
 }
 
 /*Sidebar*/
@@ -120,7 +139,17 @@ body {
     background-size: cover;
     background-position: center center;
 }
-
+.jupiter-button a{
+    background-image:url(images/jupiter.jpg); height="550px";
+    background-size: cover;
+    background-position: center center;
+}
+.saturn-button a{
+    background-image:url(images/saturn.jpg); 
+ height="550px";
+    background-size:cover;
+    background-position: center center;
+}
 /*Content Pages*/
 .name-info{
     color: #f0ff49;
@@ -147,33 +176,208 @@ body {
     font-size: 20px;
     margin-bottom: 30px;
 }
+.image-modals{
+    border-radius: 50px;
+    padding-right: 50px;
+    position: relative;
+    z-index: 100;}
+    
+/*MODALS GENERAL  */
+@keyframes shadow-pulse{
+  0% {
+    box-shadow: 0 0 0 0px #ffffff;
+  }
+  100% {
+    box-shadow: 0 0 0 25px #ffffff00;
+  }
+}
+
+@keyframes shadow-pulse-dark{
+  0% {
+    box-shadow: 0 0 0 0px #000000;
+  }
+  100% {
+    box-shadow: 0 0 0 25px #00000000;
+  }
+}
+
 .image-modals button{
+}
+.modal{
+    width: 40%;
+    padding: 20px;
+    position: absolute;
+    z-index: 500;
+    top: 40%;
+    left: 30%;
+    background-color: black;
+    color: #eaeaea;
+    border: 1px solid #f0ff49;
+    border-radius: 34px;
+}
+.modal h1{
+    margin-bottom: 20px;
+}
+.modal p{
+    margin-bottom: 20px;
+}
+#grey-background{
+    background-color: #00000099;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 400;
+    visibility: hidden;
+    
+}
+
+.visible{
+    visibility: visible !important;
+    
+}
+
+/*ORION MODALS*/
+.Betelgeuse{
+    position: absolute;
+    background-color: #00000000;
+    z-index: 300;
+    top: 115px;
+    left: 195px;
     width: 25px;
     height: 25px;
     border-radius: 100%;
-
-}
-.Betelguise{
-    position: relative;
-    z-index: 300;
-    top: -604px;
-    left: -383px;
+    animation: shadow-pulse 2s infinite;
 }
 .Rigel{
-    position: relative;
+    position: absolute;
+    background-color: #00000000;
     z-index: 300;
-    top: -133px;
-    left: -290px;
+    top: 585px;
+    left: 315px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    animation: shadow-pulse 2s infinite;
 }
 .Nebula{
-    position: relative;
+    position: absolute;
+    background-color: #00000000;
     z-index: 300;
-    top: -356px;
-    left: -397px;
-    width: 25px;
+    top: 368px;
+    left: 200px;
+    width: 100px;
+    height: 20px;
+    transform: rotate(-18deg);
+    border-radius: 10px;
+    animation: shadow-pulse 2s infinite;
 }
-.image-modals img{
-    border-radius: 50px;
-    position: relative;
-    z-index: 100;
+#nebula-modal{
+    visibility: hidden;
+}
+#Rigel-modal{
+    visibility: hidden;
+}
+#Betelgeuse-modal{
+    visibility: hidden;
+}
+
+/*GEMINI MODALS*/
+.Castor{
+    position: absolute;
+    background-color: #00000000;
+    z-index: 300;
+    top: 44px;
+    left: 236px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    animation: shadow-pulse 2s infinite;
+}
+#Castor-modal{
+    visibility: hidden;
+}
+.Pollux{
+    position: absolute;
+    background-color: #00000000;
+    z-index: 300;
+    top: 65px;
+    left: 112px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    animation: shadow-pulse 2s infinite;
+}
+#Pollux-modal{
+    visibility: hidden;
+}
+
+/*JUPITER MODALS*/
+.red-spot{
+    position: absolute;
+    background-color: #00000000;
+    border: 0.8px solid black;
+    z-index: 300;
+    top: 300px;
+    left: 331px;
+    width: 105px;
+    height: 55px;
+    transform: rotate(-13deg);
+    border-radius: 100%;
+    animation: shadow-pulse-dark 2s infinite;
+}
+#red-spot-modal{
+    visibility: hidden;
+}
+/*SATURN MODALS*/
+.rings{
+    position: absolute;
+    background-color: #00000000;
+    z-index: 300;
+    top: 340px;
+    left: 0px;
+    width: 195px;
+    height: 125px;
+    transform: rotate(-34deg);
+    border-radius: 100%;
+    animation: shadow-pulse 2s infinite;
+}
+#rings-modal{
+    visibility: hidden;
+}
+/*MOON MODALS*/
+
+.mare{
+    position: absolute;
+    background-color: #00000000;
+    border: 0.8px solid black;
+    z-index: 300;
+    top: 245px;
+    left: 351px;
+    width: 105px;
+    height: 85px;
+    transform: rotate(-13deg);
+    border-radius: 100%;
+    animation: shadow-pulse-dark 2s infinite;
+}
+#mare-modal{
+    visibility: hidden;
+}
+
+.Tycho{
+    position: absolute;
+    background-color: #00000000;
+    border: 0.8px solid black;
+    z-index: 300;
+    top: 467px;
+    left: 246px;
+    width: 25px;
+    height: 25px;
+    transform: rotate(-13deg);
+    border-radius: 100%;
+    animation: shadow-pulse-dark 2s infinite;
+}
+#Tycho-modal{
+    visibility: hidden;
 }

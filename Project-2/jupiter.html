@@ -5,39 +5,69 @@
     <title>Project 2</title>
     <link rel="stylesheet"
           href="assets/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/egc3gbz.css">
     </head>
 
 <body>
     
-<!--    <nav><a href="">Constellations</a> <a href="">Planets</a> <a href="">Moon</a></nav>-->
     <div class="container">
-        <div class="title_bubble">
-        <h1>Jupiter</h1>
-    
+        <div class="flex-nav"> 
+           <div class="title_bubble">
+        <img src="assets/galaxy_quest_png24.png">
+        
     </div>
+            <div class="button-group">
+            <div class="menu-button">
+            <a href="index.html">
+            Home</a>
+                </div>
+            <div class="menu-button">
+            <a href="planets.html">
+            Back</a>
+                </div>
+            </div>
+        </div>
+        
     <div class="flex_content">
 
-    <div class="learn-text">
-        About 
-        <br>
-        <br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <div class="content2">
+            <div class="name-info">
+            <h2>Jupiter</h2> <h3>King of the Gods</h3>
+                </div>
+        <div class="learn-text">
+        <h4>Northern & Southern Hemispheres
+            <br>
+        fifth planet from star Sol</h4>
         
-        
+        <p>Jupiter is named after the Roman king of the gods, known as Zeus in Greek mythology. A giant red gaseous planet, it is easily spottable in the night sky at varying times thoughout the year. Jupiter has at least 67 known moons, but the most prominent are the four moons first discovered by Galileo: Europa, Calisto, Io, and Ganymede. Other well-known features of the Solar System's largest planet include its distinct light-dark banding and the Great Red Spot.</p>
+    </div>
+
+    </div>
+    <div class="image-modals">
+        <img src="assets/images/jupiter.jpg" height="600px">
+        <button class="red-spot" id="red-spot-button"></button>
+  
     </div>
     
-    <div class="content2">
-        <div class="circle-slide">
+    <div id="grey-background">
+        </div>      
+    <div class="modal" id="red-spot-modal">
+        <h1>
+            The Great Red Spot
+            </h1>
+        <p>
+            Observed consistently since 1879, this massive storm is located  south of Jupiter's equator and is observable though most telescopes on a clear night. It rotates counterclockwise and is documented as dwindling in size and intensity, with the first time-lapse images of the spot taken by the <em>Voyager</em> spacecraft in 1966.
+            </p>
         
         </div>
-    
+        
+        
     </div>
-    
-    
     </div>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/popup.js"></script>
+ 
         </body>
-
 
 
     </html>
