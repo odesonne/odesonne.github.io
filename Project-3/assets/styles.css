@@ -1,0 +1,280 @@
+/*All Pages*/
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #fff9ec;
+}
+body {
+    background-image:url(images/stars_clusters.jpeg);
+    font-family: filson-soft, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #231010;
+}
+
+.container{
+    margin: 0 auto;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    position: absolute;
+}
+
+.Olivia_Glory a{
+    text-decoration: none;
+    color: #231010;
+    font-family: timberline, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.subhead a{
+    font-family: belucian, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #231010;
+}
+
+.story_bubbles{
+    height: 30em;
+    width: 100%;
+}
+
+.flag a{
+    height: 150px;
+    width: 150px;
+    border-radius: 30%;
+    display: inline-block;
+    background-image:url(pics/flag_button.jpg); 
+    background-size:cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1000;
+    top: 18em;
+    left: 18%;
+}
+.disney{
+    height: 150px;
+    width: 150px;
+    border-radius: 30%;
+    display: inline-block;
+    background-image:url(pics/nexus_button.jpg); 
+    background-size:cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1000;
+    top: 10em;
+    left: 65%;
+}
+.imminent{
+    height: 150px;
+    width: 150px;
+    border-radius: 30%;
+    display: inline-block;
+    background-image:url(pics/imminent_button.jpg); 
+    background-size:cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1000;
+    top: -3em;
+    left: 30%;
+}
+.book img{
+    width: 100%;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    font-family: belucian, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    padding-top: 3em; 
+}
+
+/*RESUME*/
+
+header{
+    text-align: center;
+    padding-bottom: 1.5em;
+}
+
+header img{
+    border-radius: 100%;
+    height: 100px;
+}
+.container2{
+    margin: 0 auto;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.thick{
+    border: none;
+    background-color: mediumpurple;
+    color: mediumpurple;
+    height: 0.15em;
+}
+
+.personal{
+    font-family: belucian, serif;
+    font-style: normal;
+    font-weight: 400;
+}
+h2, h3, h4{
+    font-family: belucian, serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+p{
+    font-weight: normal;
+    font-size: 0.7em;
+}
+h2{
+    padding-top: 1.5em;
+     font-size: 2em;
+}
+.info-top{
+    padding-top: 1.5em;
+}
+hr{
+    margin-top: 1.5em
+}
+
+
+@media only screen and (min-width: 960px){
+    
+    header{
+    text-align: left;
+    padding: 1em;
+}
+
+header img{
+    height: 200px;
+    border-radius: 25%;
+}
+    .pic-info{
+        display: flex;
+        align-items: center;
+    }
+    .personal{
+        padding-left: 2em; 
+    }
+    .info-top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+    }  
+}
+/*flag page*/
+
+.main-title{
+    padding-bottom: 2em;
+    font-family: belucian, serif;
+    font-style: normal;
+    font-size: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    padding-bottom: 2em;
+    font-family: belucian, serif;
+    font-style: normal;
+    font-size: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+#name{
+    font-weight: 900;
+}
+#year{
+    font-weight: 400;
+    padding-right: 1.5em;
+}
+
+.full{
+    width:100%;
+    padding-bottom: 1.5em;
+}
+#one{
+    position: relative;
+    z-index: 100;
+}
+.materials{
+    font-family: belucian, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    padding-bottom: 1.5em;
+}
+#process{
+    padding-top: 1.5em;
+}
+.stats{
+    font-family: belucian, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.7em;
+    padding-bottom: 1.5em;
+}
+#blue{
+    color: #23a3be;
+}
+#seven{
+    padding-top: 1.5em;
+}
+@media only screen and (min-width:1024px){
+    .title, .main-title{
+        font-size: 2.7em;
+    }
+    .flex{
+        display: flex;
+    }
+    #half{
+        width: 93%;
+        
+    }
+    #one{
+        width: 60%;
+        height: 50%;
+    }
+    #one-half{
+        width: 93%;
+    }
+    #two{
+        width: 70%;
+        height: 50%;
+    }
+    #three{
+        width:70%;
+        height: 100%;
+        padding-right: 1.5em;
+    }
+    .stats{
+        font-size: 2em
+    }
+    .paragraph1, .paragraph2{
+        padding-right: 1.5em;
+    }
+    #four{
+        width: 50%;
+        height: 100%;
+    }
+    #five{
+        width: 93%;
+        height: 50%;
+    }
+    #six{
+        width: 50%;
+        height: 100%;
+    }
+    .paragraph3, #five{
+        padding-top: 2em;
+    }
+}
